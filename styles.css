@@ -1,0 +1,98 @@
+html{
+  background-color: rgb(20, 175, 223);
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+@font-face{
+  font-family:'digital-clock-font';
+  src: url(./ticking-timebomb-bb.regular.ttf);
+ }
+.main{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.calculator{
+  background-color: rgb(0, 0, 0);
+  box-shadow: 6px 8px 4px 3px rgb(53, 90, 124);
+  border-bottom: 1px solid rgb(3, 3, 3);
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  height: 30rem;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;  
+}
+.screen{
+  font-family:'digital-clock-font';
+  width: 90%;
+  height: 65px;
+  padding: 2px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: self-end;
+  background-color: rgb(173, 171, 171);
+  border: none;
+  border-radius: 6px;
+}
+.screen-top{
+  font-size: 15px;
+}
+.button-pad{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.button-pad-row{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-pad-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgb(112, 112, 112);
+  box-shadow: 2px 1px 4px 1px rgb(58, 56, 56);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.button-pad-btn:hover{
+  background-color: rgb(85, 79, 79);
+}
+.button-pad-btn:active {
+  transform: translateY(3px);
+}
+.operator{
+  color: chartreuse;
+}
+.button-pad-row > .clear-btn{
+  color:red;
+
+}
+.operator:hover{
+  background-color: rgb(65, 116, 15);
+}
+.clear-btn:hover{
+  background-color: rgb(155, 31, 31);
+  color: aliceblue;
+}

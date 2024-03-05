@@ -10,10 +10,7 @@ body{
   align-items: center;
   font-size: 25px;
 }
-@font-face{
-  font-family:'digital-clock-font';
-  src: url(./ticking-timebomb-bb.regular.ttf);
- }
+
 .main{
   display: flex;
   flex: 1;
@@ -49,7 +46,7 @@ body{
   border: none;
   border-radius: 6px;
 }
-.screen-top{
+.screen-bottom{
   font-size: 15px;
 }
 .button-pad{
@@ -85,6 +82,8 @@ body{
 .operator{
   color: chartreuse;
 }
+
+
 .button-pad-row > .clear-btn{
   color:red;
 
@@ -96,3 +95,6 @@ body{
   background-color: rgb(155, 31, 31);
   color: aliceblue;
 }
+.equal:hover{
+background:white;
+color:black;}

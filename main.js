@@ -70,6 +70,8 @@ equal.addEventListener("click",()=>{
 
 })
 
+decimal.addEventListener("click",decimalBtn)
+
 // operation functions
 function add(previousNum,currentNum){
 	return previousNum + currentNum};
@@ -130,4 +132,11 @@ function operate(){
 };    
 function roundNumber(num){
   return Math.round(num*1000)/1000;
+}
+
+function decimalBtn(){
+  if(!currentNumber.includes(".")){
+    currentNumber +=".";
+  }
+
 }
